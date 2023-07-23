@@ -40,3 +40,11 @@ function showModalHandler() {
 
     document.body.append(backdrop);
 }
+
+function closeModalHandler() { //remove modal  overlay 
+    modal.remove();
+    modal = null;
+
+    backdrop.remove();
+    backdrop = null;
+}
