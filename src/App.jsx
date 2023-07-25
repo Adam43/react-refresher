@@ -1,14 +1,13 @@
-import Todo from "./components/Todo.jsx";
+import {} from "module";
+import { Outlet } from "react-router-dom";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
-    <div>
-      <h1>My Todos</h1>
-        <Todo text='Learn React' />
-        <Todo text='Master React' />
-        <Todo text='Explore the full React course'/>
-    </div>
-  )
+    <Layout>
+      <Outlet />
+    </Layout>
+  );
 }
-0
+
 export default App;
